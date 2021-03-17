@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue -- With empty vals -- renders component correctly 1`] = `
+<div class="app">
+  <header-stub></header-stub>
+  <div class="container">
+    <div class="search"><label for="Name">Search your beer</label> <input id="Name" type="text" name="Name" placeholder="Search by name / brew date (mm-yyyy)">
+      <!---->
+    </div>
+    <listcomponent-stub beerlist=""></listcomponent-stub>
+    <!---->
+  </div>
+  <transition-stub name="modal">
+    <!---->
+  </transition-stub>
+</div>
+`;
+
+exports[`App.vue -- With populated vals -- renders component correctly 1`] = `
+<div class="app">
+  <header-stub></header-stub>
+  <div class="container">
+    <div class="search"><label for="Name">Search your beer</label> <input id="Name" type="text" name="Name" placeholder="Search by name / brew date (mm-yyyy)">
+      <!---->
+    </div>
+    <listcomponent-stub beerlist="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></listcomponent-stub>
+    <div class="pages">
+      <buttoncomponent-stub label="Previous page" disabled="true"></buttoncomponent-stub>
+      <buttoncomponent-stub label="Next Page"></buttoncomponent-stub>
+    </div>
+  </div>
+  <transition-stub name="modal">
+    <!---->
+  </transition-stub>
+</div>
+`;
