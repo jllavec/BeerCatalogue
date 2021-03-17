@@ -38,7 +38,7 @@ Si se pulsa sobre las cajas, se despliega un modal que muestra los datos que se 
 
 Para guardar las cervezas en favoritos, se puede pulsar el icono de la estrella, la cual queda marcada cuando estos están como favoritos. Para que persistan, se emite un evento al padre para que almacene / elimine ese elemento y poder mostrarlo después, o en cualquiera de las búsquedas, pueda aparecer como que ya estaba marcado como favorito, ya que desde el padre, se retoca la lista de cervezas que llega del API mediante una computada, la cual enriquece esa lista con la propiedad isFav. Para poder ver la lista de favoritos únicamente, al pulsar sobre el botón Show Favs, se muestra este listado. Como ya había varios ejemplos en el que se realizan llamadas combinadas entre terminos de búsqueda y paginado, me pareció buena idea hacerlo sin llamada al API y que persistan en la aplicación. Pero se podría haber implementado según el api, combinando todos los parametros adicionales y mapeando esos id para poder obtener el listado de favoritos de ahí directamente, sin necesidad de guardarlos en la aplicación totalmente.
 
-Se han realizado test unitarios únicamente en la App, ya que a mi modo de ver es la parte más compleja.
+Se han realizado test unitarios únicamente en la App, ya que a mi modo de ver es la parte más compleja y que más variedad a la hora de ejemplos podía dar.
 
 Creo que con esto, se explican el grueso de las decisiones que he tomado a la hora de realizar la prueba y en la revisión de la misma podremos comentar más cosas.
 
