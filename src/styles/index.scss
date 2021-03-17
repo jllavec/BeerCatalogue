@@ -1,0 +1,44 @@
+@import './base/fonts';
+@import './base/base';
+@import './base/reset';
+
+.container {
+  margin: 0 auto;
+  max-width: rem(1200);
+  padding: rem(16) rem(24) 0;
+  padding-bottom: rem(100);
+
+  .search {
+    background-color: $primary-color;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(16);
+    padding: 20px;
+
+    label {
+      color: white;
+      font-size: rem(30);
+      padding-bottom: rem(8);
+    }
+
+    input {
+      border-radius: 8px;
+      height: rem(40);
+      padding: rem(16);
+    }
+  }
+
+  .beer-list {
+    margin-bottom: rem(16);
+  }
+
+  .pages {
+    display: flex;
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
