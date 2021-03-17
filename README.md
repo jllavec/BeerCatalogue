@@ -5,17 +5,12 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Levanta la aplicación para desarrollo
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
+### Lanzar test unitarios
 ```
 npm run test:unit
 ```
