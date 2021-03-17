@@ -1,4 +1,4 @@
-# prueba-codigo
+# BeerCatalogue
 
 ## Instalación de las dependencias del proyecto
 ```
