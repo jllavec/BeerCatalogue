@@ -1,0 +1,73 @@
+.modal {
+  align-items: flex-start;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: opacity .15s ease-out;
+  width: 100vw;
+
+  &__backdrop {
+    background-color: rgba(0, 0, 0, .3);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__dialog {
+    background-color: white;
+    border-radius: 8px;
+    max-height: calc(100vh - 200px);
+    min-width: rem(300);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: rem(24);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: top .5s ease-out;
+    width: 600px;
+  }
+
+  &-enter-active,
+  &-leave-active {
+    opacity: 0;
+
+    .modal__dialog {
+      top: -800px;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin-bottom: rem(16);
+    }
+
+    &__title {
+      font-size: rem(30);
+    }
+
+    &__image {
+      height: rem(100);
+      object-fit: contain;
+
+      @include breakpoint(tablet) {
+        height: rem(200);
+      }
+
+      @include breakpoint(desktop) {
+        height: rem(300);
+      }
+    }
+
+    &__list {
+      margin-left: rem(16);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.header {
+  align-items: center;
+  background-color: $primary-color;
+  display: flex;
+  height: rem(40);
+  padding: rem(20);
+
+  @include breakpoint(desktop) {
+    height: rem(80);
+  }
+
+  &__image {
+    margin-right: rem(20);
+    width: rem(30);
+
+    @include breakpoint(desktop) {
+      width: rem(60);
+    }
+
+    path {
+      fill: white;
+    }
+
+  }
+
+  &__title {
+    color: white;
+    
+    font-size: rem(24);
+    line-height: rem(40);
+
+    @include breakpoint(desktop) {
+      font-size: rem(40);
+      line-height: rem(56);
+    }
+  }
+}

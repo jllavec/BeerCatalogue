@@ -1,0 +1,73 @@
+.beer-list {
+  $parent: &;
+  background-color: $bg-color-dark;
+  border-radius: 8px;
+  padding: rem(16);
+
+  &--gallery {
+    @include breakpoint(tablet) {
+      display: grid;
+      grid-gap: rem(16);
+      grid-template-columns: repeat(auto-fill, 250px);
+      justify-content: center;
+      justify-items: center;
+      width: 100%;
+    }
+
+    #{$parent}__element-fav {
+      bottom: rem(8);
+      top: unset;
+    }
+  }
+
+  &__display-selector {
+    display: flex;
+    margin-bottom: rem(32);
+  }
+
+  &__gallery-trigger {
+    display: none;
+
+    @include breakpoint(tablet) {
+      display: block;
+    }
+  }
+
+  &__element {
+    background-color: $bg-color;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(8);
+    padding: rem(8);
+    position: relative;
+    width: 100%;
+
+    &-title {
+      font-size: rem(20);
+    }
+
+    &-emoji {
+      margin-top: auto;
+    }
+
+    &-fav {
+      bottom: rem(8);
+      fill: #fff;
+      position: absolute;
+      right: rem(8);
+      stroke: #000;
+      width: rem(20);
+
+      @include breakpoint(tablet) {
+        bottom: unset;
+        top: rem(8);
+      }
+
+      &--selected {
+        fill: #0ececf;
+      }
+    }
+  }
+}

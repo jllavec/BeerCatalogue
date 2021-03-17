@@ -1,0 +1,30 @@
+.button {
+  background: $secondary-color;
+  border: 2px solid $secondary-color;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+  color: $white;
+  display: block;
+  font-size: 14px;
+  font-size: rem(18);
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  letter-spacing: rem(0.15);
+  line-height: rem(16);
+  line-height: rem(22);
+  min-width: rem(200);
+  padding: rem(17) rem(25);
+  text-align: center;
+  transition: .3s all ease;
+
+  &:hover {
+    background: $bg-color-green;
+    border: 2px solid $bg-color-green;
+    color: $white;
+  }
+
+  &:disabled {
+    background-color: grey;
+  }
+}
